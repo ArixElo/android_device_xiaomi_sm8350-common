@@ -398,6 +398,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Soong namespaces
+PRODUCT_BOARD_PLATFORM := lahaina
+PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
