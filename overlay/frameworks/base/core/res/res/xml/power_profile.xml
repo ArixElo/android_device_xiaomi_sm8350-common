@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <device xmlns:android="http://schemas.android.com/apk/res/android" name="Android">
-    <item name="battery.capacity">5020</item>
+    <item name="battery.capacity">4250</item>
     <array name="cpu.clusters.cores">
         <value>6</value>
         <value>2</value>
