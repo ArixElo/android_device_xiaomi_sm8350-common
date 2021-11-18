@@ -116,7 +116,8 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/framework_compatibility_matrix.xml
+    $(COMMON_PATH)/framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/manifest_lahaina.xml \
@@ -129,6 +130,7 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/manifests/android.hardware.neuralnetworks@1.3-service-qti.xml \
     $(COMMON_PATH)/manifests/android.hardware.thermal@2.0-service.qti.xml \
     $(COMMON_PATH)/manifests/c2_manifest_vendor.xml \
+    $(COMMON_PATH)/manifests/fod.xml \
     $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.clearkey.xml \
     $(COMMON_PATH)/manifests/manifest_android.hardware.drm@1.3-service.widevine.xml \
     $(COMMON_PATH)/manifests/vendor.qti.diag.hal.service.xml \
