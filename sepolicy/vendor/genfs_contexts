@@ -1,8 +1,8 @@
 # Battery
 genfscon sysfs /class/qcom-battery u:object_r:vendor_sysfs_battery_supply:s0
 
-# Fingerprint
-genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs_fingerprint:s0
+# Power
+genfscon sysfs /devices/virtual/touch/tp_dev/double_tap u:object_r:vendor_sysfs_double_tap:s0
 
 # Wakeup nodes
 genfscon sysfs /devices/platform/dummy_hcd.0/usb1/wakeup u:object_r:sysfs_wakeup:s0
