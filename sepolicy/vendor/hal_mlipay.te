@@ -23,3 +23,11 @@ set_prop(hal_mlipay_default, mlipay_prop);
 
 get_prop(hal_mlipay_default, vendor_fp_prop)
 get_prop(hal_mlipay_default, vendor_fp_info_prop)
+
+allow hal_mlipay_default hwservicemanager:binder call;
+allow hal_mlipay_default hwservicemanager:binder transfer;
+
+allow hal_mlipay_default default_android_hwservice:hwservice_manager add;
+allow hal_mlipay_default default_android_hwservice:hwservice_manager find;
+
+allow hal_mlipay_default hidl_base_hwservice:hwservice_manager add;
