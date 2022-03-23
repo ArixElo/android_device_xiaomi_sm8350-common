@@ -166,7 +166,7 @@ system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/dpmapi.jar
--system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_system_ext
 -system_ext/lib64/libdpmctmgr.so
 -system_ext/lib64/libdpmfdmgr.so
 -system_ext/lib64/libdpmframework.so
@@ -175,7 +175,7 @@ system_ext/framework/dpmapi.jar
 system/framework/tcmclient.jar
 -vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
--vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_vendor
 -vendor/lib64/libdpmqmihal.so
 
 # DRM
@@ -334,7 +334,7 @@ vendor/etc/xtwifi.conf
 -system_ext/lib64/lib-imsvt.so
 -system_ext/lib64/lib-imsvtutils.so
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
--system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
 -system_ext/priv-app/ims/ims.apk
 -vendor/bin/imsdaemon
 -vendor/bin/ims_rtp_daemon
@@ -377,7 +377,7 @@ vendor/etc/seccomp_policy/imsrtp.policy
 -vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 -vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 -vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
--vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+-vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_vendor
 
 # IRQ balance
 -vendor/bin/msm_irqbalance
@@ -404,10 +404,10 @@ vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 -vendor/lib/libmulawdec.so
 
 # Media
--system_ext/lib64/libmmosal.so
--system_ext/lib64/libmmparser_lite.so
--system_ext/lib/libmmosal.so
--system_ext/lib/libmmparser_lite.so
+-system_ext/lib64/libmmosal.so;MODULE=libmmosal_system_ext
+-system_ext/lib64/libmmparser_lite.so;MODULE=libmmparser_lite_system_ext
+-system_ext/lib/libmmosal.so;MODULE=libmmosal_system_ext
+-system_ext/lib/libmmparser_lite.so;MODULE=libmmparser_lite_system_ext
 -vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media_lahaina/video_system_specs.json
@@ -418,8 +418,8 @@ vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/video_system_specs.json
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml
--vendor/lib64/libmmosal.so
--vendor/lib/libmmosal.so
+-vendor/lib64/libmmosal.so;MODULE=libmmosal_vendor
+-vendor/lib/libmmosal.so;MODULE=libmmosal_vendor
 -vendor/lib/libqc2vppfilter.so
 -vendor/lib/libqcodec2_basecodec.so
 -vendor/lib/libqcodec2_base.so
@@ -807,7 +807,7 @@ system_ext/etc/wfdconfigsink.xml
 -system_ext/lib/libwfduibcsink.so
 -system_ext/lib/libwfduibcsrcinterface.so
 -system_ext/lib/libwfduibcsrc.so
--system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0_system_ext
 -system_ext/priv-app/WfdService/WfdService.apk
 -system/framework/WfdCommon.jar
 -vendor/bin/wfdvndservice
@@ -841,5 +841,5 @@ vendor/etc/wfdconfig.xml
 -vendor/lib/libwfduibcsrcinterface_proprietary.so
 -vendor/lib/libwfduibcsrc_proprietary.so
 -vendor/lib/libwfdutils_proprietary.so
--vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0_vendor
 -vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
